@@ -1,6 +1,10 @@
 <template>
 	<div>
-		<router-link to="teamSearch">User123</router-link>
+		<div class="header">
+			<img class="logo" src="../assets/img/logo.png" />
+			<i class="iconr iconfont icon-caidan"></i>
+			<i class="iconr iconfont icon-search1"></i>
+		</div>
 	</div>
 </template>
 
@@ -81,12 +85,7 @@ export default {
 
 	methods: {
 		test: function(){
-			this.$vux.toast.show({
-				text: 'Loading'
-			})
-//			this.$vux.loading.show({
-//				text: 'Loading'
-//			})
+			
 		},
 	}
   
