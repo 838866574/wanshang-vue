@@ -6,6 +6,7 @@ import router from './router'
 
 import {LoadingPlugin} from 'vux'
 import {ToastPlugin} from 'vux'
+import $ from 'jquery'
 
 Vue.use(LoadingPlugin);
 Vue.use(ToastPlugin);
