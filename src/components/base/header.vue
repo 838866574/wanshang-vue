@@ -1,8 +1,12 @@
 <template>
-	<div class="header">
-		<img class="logo" src="../../assets/img/logo.png" />
-		<i class="iconr iconfont icon-caidan"></i>
-		<i class="iconr iconfont icon-search1"></i>
+	<div>
+		<div class="header">
+			<img class="logo" src="../../assets/img/logo.png" />
+			<i @click="menuClick()" class="iconr iconfont icon-caidan"></i>
+			<i class="iconr iconfont icon-search1"></i>
+		</div>
+		
+		<div v-show="headerMenu" class="headerMenu" @touchmove.prevent></div>
 	</div>
 </template>
 
@@ -18,7 +22,7 @@
 		},
 		data() {
 			return {
-				
+				headerMenu: false,
 			}
 		},
 		props: {
@@ -28,7 +32,9 @@
 			
 		},
 		methods: {
-			
+			menuClick(){
+				this.headerMenu = true;
+			},
 		},
 	}
 </script>
