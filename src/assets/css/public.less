@@ -83,7 +83,8 @@ margin-top: 26*@init;}
 .footer .dz{text-align: center; font-size: 10*@init; line-height: 1.7; margin-top: 16*@init; margin-bottom: 5*@init;}
 
 
-.headerMenu{width: 100%; height: 100%; background: #ffffff; position: fixed; left: 0; top: 50*@init; z-index: 66;}
+.headerMenu{width: 100%; height: 100%; background: #ffffff; position: fixed; left: 0; top: 0; z-index: 66;
+box-sizing: border-box; padding-top: 50*@init; overflow-y: auto;}
 .headerMenu ul{margin: 0 45*@init;}
 .headerMenu ul li{line-height: 75*@init; border-bottom: solid 1px #e3e3e3;}
 .headerMenu .iconfont{float: right; color: #b4201f;}
@@ -105,3 +106,32 @@ left: 0; top: 50*@init; z-index: 67; width: 100%;
     input{margin: 0; padding: 0; border: 0; height: 39*@init; line-height: 39*@init; float: left; width: 85%}
     a{float: right; color: #9b9b9b; font-size: 16*@init;}
 }
+
+.teamSearch{margin: 0 23*@init;
+    .condition{
+        h3{font-size: 14*@init; line-height: 34*@init; color: #4a4a4a;}
+        
+        input{border: solid 1px #cecece; height: 41*@init; line-height: 41*@init; width: 100%; 
+padding: 0 10px; box-sizing: border-box;}
+        select{border: solid 1px #cecece; height: 41*@init; line-height: 41*@init; width: 100%; 
+padding: 0 10px; box-sizing: border-box;}
+        .searchBtn{width: 100%; height: 41*@init; line-height: 41*@init; background-color: #b4201f; padding: 0; margin: 0; border: none;
+color: #FFFFFF; text-align: center; margin-top: 13*@init; cursor: pointer; font-size: 14*@init;}
+    }
+}
+
+.tsItemTit{font-size: 20*@init; line-height: 60*@init; text-align: center;}
+.tsItemBox ul{overflow: hidden;}
+.tsItemBox li{width: 156*@init; box-sizing: border-box;height: 96*@init; border: solid 1px #dfdfdf; float: left;
+text-align: center; margin-right: 17*@init; margin-bottom: 15*@init; font-size: 13*@init;}
+.tsItemBox li i{font-size: 35*@init;}
+.tsItemBox li .icon{margin-top: 9*@init; cursor: pointer;}
+.tsItemBox li .text{line-height: 14*@init;}
+.tsItemBox li:hover{background: #b4201f; color:#FFFFFF;}
+.tsItemBox li:hover a{color: #FFFFFF;}
+
+.mbNav{height: 45*@init; line-height: 45*@init; border-bottom: solid 1px #dcdcdc; font-size: 13*@init;}
+.mbNav a{ padding: 0 3*@init;}
+.mbNav a:first-child{padding-left: 0;}
+.mbNav a.act{color: #9b9b9b;}
+

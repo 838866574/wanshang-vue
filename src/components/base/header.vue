@@ -12,14 +12,14 @@
 				<a>搜索</a>
 			</div>
 		</div>
-		
-		<div v-show="headerMenu" class="headerMenu" @touchmove.prevent>
+		<!--@touchmove.prevent-->
+		<div v-show="headerMenu" class="headerMenu">
 			<ul>
 				<li><a style="margin-left: 0;" class="act">中文</a>|<a>EN</a></li>
 				<li @click="showHeaderMenuTwo()"><i class="iconfont icon-slide_right"></i>万商天勤</li>
 				<li @click="showHeaderMenuThree()"><i class="iconfont icon-slide_right"></i>业务领域</li>
 				<li>V&amp;T联盟</li>
-				<li>团队成员</li>
+				<li @click="gotoTwoPage('teamSearch')">团队成员</li>
 				<li>新闻动态</li>
 				<li>出版物</li>
 				<li>加入我们</li>
@@ -78,17 +78,40 @@
 //			this.touchmoveAdd();
 		},
 		methods: {
+			gotoTwoPage(oUrl){
+				this.$router.push({path:'/'+oUrl})
+				$("html").css({
+					"overflow": "auto",
+					"height": "auto"
+				});
+				$("body").css({
+					"overflow": "auto",
+					"height": "auto"
+				});
+			},
 			menuClickShow(){
 				if(this.headerMenu){
 					this.headerMenu = false;
 					this.headerMenuTwo = false;
 					this.headerMenuThree = false;
-					$("body").height("auto");
-					$("body").css("overflow", "auto");
+					$("html").css({
+						"overflow": "auto",
+						"height": "auto"
+					});
+					$("body").css({
+						"overflow": "auto",
+						"height": "auto"
+					});
 				} else {
 					this.headerMenu = true;
-					$("body").height("100%");
-					$("body").css("overflow", "hidden");
+					$("html").css({
+						"overflow": "hidden",
+						"height": "100%"
+					});
+					$("body").css({
+						"overflow": "hidden",
+						"height": "100%"
+					});
 				}
 			},
 			showHeaderMenuTwo(){
