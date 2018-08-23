@@ -24,7 +24,7 @@
 						<option>222</option>
 					</select>
 				</div>
-				<button type="button" class="searchBtn">搜 索</button>
+				<button @click="gotoTeamSearchList()" type="button" class="searchBtn">搜 索</button>
 			</div>
 			
 			<div class="tsItemBox">
@@ -116,6 +116,11 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods: {
+  	gotoTeamSearchList(){
+  		this.$router.push({path:'/teamSearchList'})
+  	},
   }
 }
 </script>

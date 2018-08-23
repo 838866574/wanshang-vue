@@ -16,8 +16,8 @@
 		<div v-show="headerMenu" class="headerMenu">
 			<ul>
 				<li><a style="margin-left: 0;" class="act">中文</a>|<a>EN</a></li>
-				<li @click="showHeaderMenuTwo()"><i class="iconfont icon-slide_right"></i>万商天勤</li>
-				<li @click="showHeaderMenuThree()"><i class="iconfont icon-slide_right"></i>业务领域</li>
+				<li @click="showHeaderMenuThree()"><i class="iconfont icon-slide_right"></i>万商天勤</li>
+				<li @click="showHeaderMenuTwo()"><i class="iconfont icon-slide_right"></i>业务领域</li>
 				<li>V&amp;T联盟</li>
 				<li @click="gotoTwoPage('teamSearch')">团队成员</li>
 				<li>新闻动态</li>
