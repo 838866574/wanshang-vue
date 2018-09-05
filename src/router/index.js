@@ -8,6 +8,12 @@ import teamSearchList from '@/components/teamSearchList'
 import aboutGyls from '@/components/aboutGyls'
 import businessFieldTabOne from '@/components/businessFieldTabOne'
 import teamSearchDetail from '@/components/teamSearchDetail'
+import searchResult from '@/components/searchResult'
+import newsList from '@/components/newsList'
+import newsDtail from '@/components/newsDtail'
+import recruit from '@/components/recruit'
+import publication from '@/components/publication'
+import aboutRyjx from '@/components/aboutRyjx'
 
 Vue.use(Router)
 
@@ -47,6 +53,36 @@ export default new Router({
       path: '/teamSearchDetail',
       name: 'teamSearchDetail',
       component: teamSearchDetail
+    },
+    {
+      path: '/searchResult',
+      name: 'searchResult',
+      component: searchResult
+    },
+    {
+      path: '/newsList',
+      name: 'newsList',
+      component: newsList
+    },
+    {
+      path: '/newsDtail',
+      name: 'newsDtail',
+      component: newsDtail
+    },
+    {
+      path: '/recruit',
+      name: 'recruit',
+      component: recruit
+    },
+    {
+      path: '/publication',
+      name: 'publication',
+      component: publication
+    },
+    {
+      path: '/aboutRyjx',
+      name: 'aboutRyjx',
+      component: aboutRyjx
     }
   ]
 })

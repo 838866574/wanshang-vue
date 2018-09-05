@@ -24,6 +24,11 @@ ul, ol { list-style: none; }
 
 @init: 1rem/18;
 
+.font22{font-size: 22*@init;}
+.font14{font-size: 14*@init;}
+.font18{font-size: 18*@init;}
+
+
 .header{height: 50*@init;box-shadow: 0 2px 4px 0 rgba(205, 205, 205, 0.5); background: #FFFFFF;
 position: relative; z-index: 99;}
 .header .logo{width: 38*@init; height: 38*@init; margin: 6*@init 0 0 17*@init;}
@@ -164,5 +169,50 @@ margin-right: 14*@init;}
 box-sizing: border-box; line-height: 53*@init; margin-top: 20*@init; background-size: 100% 100%;}
 .teamSearchDetail .xz a{color: #FFFFFF; width: 100%; height: 53*@init; display: block;}
 
+.searchResult .xgjg{font-size: 18*@init; color: #9b9b9b;}
+.jgList{margin-top: 10*@init;}
+.jgList li{font-size: 14*@init; border-bottom: solid 2px #dcdcdc; line-height: 1.71; padding: 7*@init 0;}
+.jgList li .tit{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.jgList li .date{color: #9b9b9b;}
 
+.news_lbt .msBxo{color: #FFFFFF; background: #b4201f; padding: 6*@init 19*@init; line-height: 1.9;}
+.news_lbt .msBxo h3{font-size: 16*@init;}
+.news_lbt .msBxo .date{font-size: 14*@init;}
+.news_lbt .msBxo .ms{line-height: 1.44; font-size: 18*@init; padding: 10*@init 0;}
+.news_lbt .msBxo .xq span{font-size: 14*@init;}
 
+.recruit .topk{background: #b4201f; color: #FFFFFF; padding: 16*@init 16*@init; margin-top: 10*@init;}
+.recruit .topk .bt{  font-size: 34*@init; line-height: 36*@init; margin-bottom: 15*@init;}
+.recruit .topk .ms{font-size: 14*@init; line-height: 1.36;}
+
+.recruitList{}
+.recruitList li{width: 100%; box-sizing: border-box; border: solid 1px #dfdfdf; background: #f4f4f4;
+position: relative; border-bottom: none; margin-bottom: 18*@init;}
+.recruitList li .tit{line-height: 65*@init; padding: 0 24*@init; font-size: 16*@init; font-weight: bold; cursor: pointer;
+border-bottom: solid 1px #dfdfdf;}
+.recruitList li .tit .iconfont{float: right; color: #b4201f;}
+
+.recruitDetail{width: 100%; border-top: none; box-sizing: border-box; border-bottom: solid 1px #dfdfdf;
+padding: 0 22*@init; font-size: 14*@init; z-index: 3; background: #FFFFFF; display: none;
+}
+.recruitDetail .tit2{height: 50*@init; line-height: 50*@init; border-bottom: solid 1px #dfdfdf; font-size: 14*@init;}
+.recruitDetail .tit2 .dd{float: right;}
+.recruitDetail .cont{line-height: 1.21; margin: 20*@init 0;}
+
+.publication{padding-top: 8*@init;}
+.publication li{overflow: hidden; margin-top: 11*@init;}
+.publication li .left{width: 18%; height: 98*@init; float: left; background: #d9d9d9; text-align: center;
+overflow: hidden;}
+.publication li .left .iconfont{font-size: 21*@init; line-height: 43*@init;}
+.publication li .right{width: 82%; height: 98*@init; float: left; background: #efefef; padding: 0 16*@init;
+box-sizing: border-box;}
+.publication li .tit{color: #4a4a4a; font-size: 16*@init; line-height: 35*@init; margin-top: 17*@init;
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;}
+.publication li .date{color: #9b9b9b; font-size: 14*@init;}
