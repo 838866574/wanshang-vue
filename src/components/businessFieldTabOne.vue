@@ -1,13 +1,13 @@
 <template>
 	<div>
 		<o_header></o_header>
+		
+			
+		<div class="mbNav nyMargin" style="border: none;">
+			<a>首页</a>&gt;<a>业务领域</a>&gt;<a class="act">银行与金融</a>
+		</div>
+		<img class="img100 middle" src="../assets/img/ny02.png" />
 		<div class="aboutGyls nyMargin">
-			
-			<div class="mbNav">
-				<a>首页</a>&gt;<a>业务领域</a>&gt;<a class="act">银行与金融</a>
-			</div>
-			
-			<img class="img100 middle" src="../assets/img/ny02.png" />
 			
 			<div class="nyTit">银行与金融</div>
 			<div style="padding-top: 0.4rem;">

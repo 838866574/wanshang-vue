@@ -1,13 +1,13 @@
 <template>
 	<div>
 		<o_header></o_header>
+			
+		<div class="mbNav nyMargin" style="border: none;">
+			<a>首页</a>&gt;<a class="act">搜索结果</a>
+		</div>
+		<img class="img100 middle" src="../assets/img/ny03.png" />
 		<div class="searchResult nyMargin">
 			
-			<div class="mbNav">
-				<a>首页</a>&gt;<a class="act">搜索结果</a>
-			</div>
-			
-			<img class="img100 middle" src="../assets/img/ny03.png" />
 			
 			<div class="nyTit">搜索结果</div>
 			
