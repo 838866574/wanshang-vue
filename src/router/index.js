@@ -14,6 +14,7 @@ import newsDtail from '@/components/newsDtail'
 import recruit from '@/components/recruit'
 import publication from '@/components/publication'
 import aboutRyjx from '@/components/aboutRyjx'
+import aboutShzr from '@/components/aboutShzr'
 
 Vue.use(Router)
 
@@ -83,6 +84,11 @@ export default new Router({
       path: '/aboutRyjx',
       name: 'aboutRyjx',
       component: aboutRyjx
+    },
+    {
+      path: '/aboutShzr',
+      name: 'aboutShzr',
+      component: aboutShzr
     }
   ]
 })
