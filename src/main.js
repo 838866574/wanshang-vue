@@ -7,6 +7,7 @@ import router from './router'
 import {LoadingPlugin} from 'vux'
 import {ToastPlugin} from 'vux'
 import $ from 'jquery'
+import BMap from 'BMap'
 
 Vue.use(LoadingPlugin);
 Vue.use(ToastPlugin);

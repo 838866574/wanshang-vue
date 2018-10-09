@@ -15,6 +15,8 @@ import recruit from '@/components/recruit'
 import publication from '@/components/publication'
 import aboutRyjx from '@/components/aboutRyjx'
 import aboutShzr from '@/components/aboutShzr'
+import vtPartner from '@/components/vtPartner'
+import contactUs from '@/components/contactUs'
 
 Vue.use(Router)
 
@@ -89,6 +91,16 @@ export default new Router({
       path: '/aboutShzr',
       name: 'aboutShzr',
       component: aboutShzr
+    },
+    {
+      path: '/vtPartner',
+      name: 'vtPartner',
+      component: vtPartner
+    },
+    {
+      path: '/contactUs',
+      name: 'contactUs',
+      component: contactUs
     }
   ]
 })
