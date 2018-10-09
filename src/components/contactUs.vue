@@ -67,7 +67,6 @@ export default {
 		var point_sh = new BMap.Point(121.512382,31.241039);        // 上海    
 		var point_cd = new BMap.Point(104.074896,30.558684);        // 成都    
 		
-		console.log(point_bj)
 		
 		var marker_bj = new BMap.Marker(point_bj);        // 创建标注
 		var marker_sz = new BMap.Marker(point_sz);        // 创建标注
@@ -100,11 +99,10 @@ export default {
   	changgeOverlay(city){
   		console.log(city);
   		if(city == 'bj'){
-			BMap.panTo(point_bj)
+			map.panTo(point_bj)
 		}
 		if(city == 'sz'){
-			var point_sz = new BMap.Point(114.070292,22.549871);        // 深圳    
-			BMap.panTo(point_sz)
+			map.panTo(point_sz)
 		}
 		if(city == 'sh'){
 			map.panTo(point_sh)
